@@ -1,0 +1,764 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+        <title>MyHalalTrip &amp; UI Framework</title>
+
+        <meta name="description" content="Dashmix - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
+        <meta name="author" content="pixelcave">
+        <meta name="robots" content="noindex, nofollow">
+
+        <!-- Open Graph Meta -->
+        <meta property="og:title" content="Dashmix - Bootstrap 4 Admin Template &amp; UI Framework">
+        <meta property="og:site_name" content="Dashmix">
+        <meta property="og:description" content="Dashmix - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="">
+        <meta property="og:image" content="">
+
+        <!-- Icons -->
+        <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+        <link rel="shortcut icon" href="assets/media/favicons/favicon.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="assets/media/favicons/favicon-192x192.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/media/favicons/apple-touch-icon-180x180.png">
+        <!-- END Icons -->
+
+        <!-- Stylesheets -->
+        <!-- Page JS Plugins CSS -->
+        <link rel="stylesheet" href="assets/js/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
+        <link rel="stylesheet" href="assets/js/plugins/ion-rangeslider/css/ion.rangeSlider.css">
+        <link rel="stylesheet" href="assets/js/plugins/ion-rangeslider/css/ion.rangeSlider.skinHTML5.css">
+        <link rel="stylesheet" href="assets/js/plugins/slick-carousel/slick.css">
+        <link rel="stylesheet" href="assets/js/plugins/slick-carousel/slick-theme.css">
+
+        <!-- Fonts and Dashmix framework -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,400i,600,700">
+        <link rel="stylesheet" id="css-main" href="assets/css/dashmix.min.css">
+
+        <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
+        <!-- <link rel="stylesheet" id="css-theme" href="assets/css/themes/xwork.min.css"> -->
+        <!-- END Stylesheets -->
+    </head>
+    <body>
+        <!-- Page Container -->
+        <!--
+            Available classes for #page-container:
+
+        GENERIC
+
+            'enable-cookies'                            Remembers active color theme between pages (when set through color theme helper Template._uiHandleTheme())
+
+        SIDEBAR & SIDE OVERLAY
+
+            'sidebar-r'                                 Right Sidebar and left Side Overlay (default is left Sidebar and right Side Overlay)
+            'sidebar-mini'                              Mini hoverable Sidebar (screen width > 991px)
+            'sidebar-o'                                 Visible Sidebar by default (screen width > 991px)
+            'sidebar-o-xs'                              Visible Sidebar by default (screen width < 992px)
+            'sidebar-dark'                              Dark themed sidebar
+
+            'side-overlay-hover'                        Hoverable Side Overlay (screen width > 991px)
+            'side-overlay-o'                            Visible Side Overlay by default
+
+            'enable-page-overlay'                       Enables a visible clickable Page Overlay (closes Side Overlay on click) when Side Overlay opens
+
+            'side-scroll'                               Enables custom scrolling on Sidebar and Side Overlay instead of native scrolling (screen width > 991px)
+
+        HEADER
+
+            ''                                          Static Header if no class is added
+            'page-header-fixed'                         Fixed Header
+
+
+        Footer
+
+            ''                                          Static Footer if no class is added
+            'page-footer-fixed'                         Fixed Footer (please have in mind that the footer has a specific height when is fixed)
+
+        HEADER STYLE
+
+            ''                                          Classic Header style if no class is added
+            'page-header-dark'                          Dark themed Header
+            'page-header-glass'                         Light themed Header with transparency by default
+                                                        (absolute position, perfect for light images underneath - solid light background on scroll if the Header is also set as fixed)
+            'page-header-glass page-header-dark'         Dark themed Header with transparency by default
+                                                        (absolute position, perfect for dark images underneath - solid dark background on scroll if the Header is also set as fixed)
+
+        MAIN CONTENT LAYOUT
+
+            ''                                          Full width Main Content if no class is added
+            'main-content-boxed'                        Full width Main Content with a specific maximum width (screen width > 1200px)
+            'main-content-narrow'                       Full width Main Content with a percentage width (screen width > 1200px)
+        -->
+        <div id="page-container" class="sidebar-o sidebar-dark sidebar-mini enable-page-overlay side-scroll">
+            <!-- Side Overlay-->
+            <aside id="side-overlay">
+                <!-- Side Header -->
+                <div class="content-header bg-dark">
+                    <div class="font-w600 text-white">
+                        UMROH HEMAT MHT
+                    </div>
+
+                    <!-- Close Side Overlay -->
+                    <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                    <a class="ml-auto text-white" href="javascript:void(0)" data-toggle="layout" data-action="side_overlay_close">
+                        <i class="fa fa-times-circle"></i>
+                    </a>
+                    <!-- END Close Side Overlay -->
+                </div>
+                <!-- END Side Header -->
+
+                <!-- Gallery -->
+                <!-- Slick Slider (.js-slider class is initialized in Helpers.slick()) -->
+                <!-- For more info and examples you can check out http://kenwheeler.github.io/slick/ -->
+                <div class="js-slider slick-nav-black slick-nav-hover slick-dotted-inner slick-dotted-white img-fluid-100" data-dots="true" data-arrows="true" data-autoplay="true" data-autoplay-speed="3000">
+                    <div>
+                        <img class="img-fluid" src="assets/media/photos/photo26@2x.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="assets/media/photos/photo28@2x.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="assets/media/photos/photo29@2x.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="assets/media/photos/photo30@2x.jpg" alt="">
+                    </div>
+                </div>
+                <!-- END Gallery -->
+
+                <!-- Info -->
+                <div class="content-side content-side-full">
+                    <p style="font-size:11px;text-align:center" >Starting from</p>
+                    <h5 class="h2 font-w300 text-center mb-2">
+                        IDR 20.000.000 <span class="font-size-h3 text-muted">per pax</span>
+                    </h5>
+                    <p style="font-size:11px;text-align:center" >Approx <span style="font-size:12px">USD 1334</span></p>
+                    <div class="text-warning text-center push">
+                        <i class="fa fa-fw fa-star"></i>
+                        <i class="fa fa-fw fa-star"></i>
+                        <i class="fa fa-fw fa-star"></i>
+                        <i class="fa fa-fw fa-star"></i>
+                        <i class="fa fa-fw fa-star"></i>
+                        <span class="text-muted">(30)</span>
+                    </div>
+                    <div class="row text-center border-top border-bottom bg-body-light pull-x push">
+                        <div class="col-6 border-bottom border-right">
+                            <p class="py-3 mb-0">
+                                <strong>25 Seat Left</strong> 
+                            </p>
+                        </div>
+                        <div class="col-6 border-bottom">
+                            <p class="py-3 mb-0">
+                              <strong>10 Days 8 Night</strong> 
+                            </p>
+                        </div>
+                        <div class="col-6 border-right">
+                            <p class="display-n2 py-3 mb-0">
+                                Commission IDR 2.000.000
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <p class="py-3 mb-0">
+                                <i class="fa fa-fw fa-info text-success mr-1"></i><i class="fa fa-fw fa-bookmark text-success mr-1"></i><i class="fa fa-fw fa-file-pdf text-success mr-1"></i>
+                            </p>
+                        </div>
+                    </div>
+                  <div class="row">
+                            <div class="col-6">
+                                                <select class="browser-default custom-select">
+                                                          <option selected>Jadwal</option>
+                                                          <option value="1">28</option>
+                                                          <option value="2">27</option>
+                                                          <option value="3">17</option>
+                                                          <option value="4">28</option>
+                                                        </select>
+                                            </div>
+                                           
+                                              <div class="col-6">
+                                                <select class="browser-default custom-select">
+                                                          <option selected>Hotel</option>
+                                                          <option value="1">Qudrup</option>
+                                                          <option value="2">Triple</option>
+                                                          <option value="3">Double</option>
+                                                          <option value="4">Single</option>
+                                                        </select>
+                                            </div>
+                                                    <div class="col-6">
+                                                <select class="browser-default custom-select">
+                                                          <option selected>Person</option>
+                                                          <option value="1">1</option>
+                                                          <option value="2">2</option>
+                                                          <option value="3">3</option>
+                                                          <option value="4">4</option>
+                                                        </select>
+                                        </div>
+                                         <div class="col-6">
+                            <a class="btn btn-sm btn-hero btn-noborder btn-primary btn-block" href="javascript:void(0)">
+                                Booking
+                            </a>
+                        </div>
+                                       </div> 
+                    <p class="font-size-sm font-w600">
+                        Dolor posuere proin blandit accumsan senectus netus nullam curae, ornare laoreet adipiscing luctus mauris adipiscing pretium eget fermentum, tristique lobortis est ut metus lobortis tortor tincidunt himenaeos habitant quis dictumst proin odio sagittis purus mi, nec taciti vestibulum quis in sit varius lorem sit metus mi.
+                    </p>
+                    
+                       <!--  <div class="col-6">
+                            <a class="btn btn-sm btn-hero btn-noborder btn-secondary btn-block" href="javascript:void(0)">
+                                View More
+                            </a>
+                        </div> -->
+                        <div class="col-8" style="float:right">
+                            <a class="btn btn-sm btn-hero btn-noborder btn-secondary btn-block" href="javascript:void(0)">
+                                More Details
+                            </a>
+                        </div>
+                    
+                </div>
+                <!-- END Info -->
+            </aside>
+            <!-- END Side Overlay -->
+
+            <!-- Sidebar -->
+            <!--
+                Sidebar Mini Mode - Display Helper classes
+
+                Adding 'smini-hide' class to an element will make it invisible (opacity: 0) when the sidebar is in mini mode
+                Adding 'smini-show' class to an element will make it visible (opacity: 1) when the sidebar is in mini mode
+                    If you would like to disable the transition animation, make sure to also add the 'no-transition' class to your element
+
+                Adding 'smini-hidden' to an element will hide it when the sidebar is in mini mode
+                Adding 'smini-visible' to an element will show it (display: inline-block) only when the sidebar is in mini mode
+                Adding 'smini-visible-block' to an element will show it (display: block) only when the sidebar is in mini mode
+            -->
+            <nav id="sidebar" aria-label="Main Navigation">
+                <!-- Side Header -->
+                <div class="content-header bg-xwork-dark">
+                    <!-- Logo -->
+                    <a class="link-fx font-size-lg text-white" href="index.html">
+                        <span class="smini-visible">
+                            <span class="text-white-75">  <i class="nav-main-link-icon fa fa-smile text-muted"></i></span>
+                        </span>
+                        <span class="smini-hidden">
+                            <span class="text-white-75">My</span>HalalTrip
+                        </span>
+                    </a>
+                    <!-- END Logo -->
+
+                    <!-- Options -->
+                    <div>
+                        <!-- Close Sidebar, Visible only on mobile screens -->
+                        <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                        <a class="d-lg-none text-white ml-2" data-toggle="layout" data-action="sidebar_close" href="javascript:void(0)">
+                            <i class="fa fa-times-circle"></i>
+                        </a>
+                        <!-- END Close Sidebar -->
+                    </div>
+                    <!-- END Options -->
+                </div>
+                <!-- END Side Header -->
+
+                <!-- Side Navigation -->
+                <div class="content-side">
+                    <ul class="nav-main">
+                          <li class="nav-main-item">
+                            <a class="nav-main-link active" href="db_travel.html">
+                                <i class="nav-main-link-icon fa fa-fire text-xinspire-light"></i>
+                                <span class="nav-main-link-name">Dashboard</span>
+                                <!-- <span class="nav-main-link-badge badge badge-pill badge-dark">3</span> -->
+                            </a>
+                        </li>
+                        <li class="nav-main-item">
+                            <a class="nav-main-link" href="">
+                                <i class="nav-main-link-icon fa fa-briefcase text-danger-light"></i>
+                                <span class="nav-main-link-name">Tour</span>
+                                <!-- <span class="nav-main-link-badge badge badge-pill badge-dark">1</span> -->
+                            </a>
+                        </li>
+                        <li class="nav-main-item">
+                            <a class="nav-main-link" href="">
+                                <i class="nav-main-link-icon fa fa-home text-warning-light"></i>
+                                <span class="nav-main-link-name">Hotels</span>
+                                <!-- <span class="nav-main-link-badge badge badge-pill badge-dark">2</span> -->
+                            </a>
+                        </li>
+                        <li class="nav-main-item">
+                            <a class="nav-main-link" href="">
+                                <!-- <i class="nav-main-link-icon far fa-plane text-xsmooth-lighter"></i> -->
+
+                                <i class="nav-main-link-icon fa fa-plane text-xsmooth-lighter"></i>
+                                <span class="nav-main-link-name">Flights</span>
+                                <!-- <span class="nav-main-link-badge badge badge-pill badge-dark">5</span> -->
+                            </a>
+                        </li>
+                        <li class="nav-main-item">
+                            <a class="nav-main-link" href="">
+                                <i class="nav-main-link-icon fa fa-flag text-xeco-light"></i>
+                                <span class="nav-main-link-name">Visa</span>
+                                <!-- <span class="nav-main-link-badge badge badge-pill badge-dark">4</span> -->
+                            </a>
+                        </li>
+                        <li class="nav-main-heading">Bookings</li>
+                        <li class="nav-main-item">
+                            <a class="nav-main-link" href="">
+                                <i class="nav-main-link-icon fa fa-book text-muted"></i>
+                                <span class="nav-main-link-name">Sales</span>
+                            </a>
+                        </li>
+                        <li class="nav-main-item">
+                            <a class="nav-main-link" href="">
+                                <i class="nav-main-link-icon fa fa-cart-plus text-muted"></i>
+                                <span class="nav-main-link-name">Purchase</span>
+                            </a>
+                        </li>
+                        <li class="nav-main-item">
+                            <a class="nav-main-link" href="">
+                                <i class="nav-main-link-icon fa fa-plus-circle text-muted"></i>
+                                <span class="nav-main-link-name">My Tour</span>
+                            </a>
+                        </li>
+                        <li class="nav-main-item">
+                            <a class="nav-main-link" href="">
+                                <i class="nav-main-link-icon fa fa-chart-bar text-muted"></i>
+                                <span class="nav-main-link-name">Reports</span>
+                            </a>
+                        </li>
+                         <li class="nav-main-item">
+                            <a class="nav-main-link" href="">
+                                <i class="nav-main-link-icon fa fa-user text-muted"></i>
+                                <span class="nav-main-link-name">Customer</span>
+                            </a>
+                        </li>
+                        <li class="nav-main-heading">Account</li>
+                        <li class="nav-main-item">
+                            <a class="nav-main-link" href="">
+                                <i class="nav-main-link-icon fa fa-user-circle text-muted"></i>
+                                <span class="nav-main-link-name">Profile</span>
+                            </a>
+                        </li>
+                        <li class="nav-main-item">
+                            <a class="nav-main-link" href="">
+                                <i class="nav-main-link-icon fa fa-arrow-right text-muted"></i>
+                                <span class="nav-main-link-name">Sign Out</span>
+                            </a>
+                        </li>
+                      <!--   <li class="nav-main-heading">Dashboards</li>
+                        <li class="nav-main-item">
+                            <a class="nav-main-link" href="be_pages_dashboard_all.html">
+                                <i class="nav-main-link-icon si si-arrow-left text-muted"></i>
+                                <span class="nav-main-link-name">Go Back</span>
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+                <!-- END Side Navigation -->
+            </nav>
+            <!-- END Sidebar -->
+
+            <!-- Main Container -->
+            <main id="main-container">
+                <!-- Page Content -->
+                <div class="row no-gutters flex-lg-10-auto">
+                    <div class="col-lg-5 col-xl-3 h100-scroll">
+                        <div class="content">
+                            <!-- Logo -->
+                            <div class="text-center d-lg-none push">
+                                <a class="link-fx font-size-lg text-dark font-w600" href="index.html">
+                                    <span class="text-muted">x</span>Travel
+                                </a>
+                            </div>
+                            <!-- END Logo -->
+
+                            <!-- Toggle Side Content -->
+                            <div class="row gutters-tiny d-lg-none push">
+                                <div class="col-6">
+                                    <!-- Toggle Sidebar -->
+                                    <!-- Layout API, functionality initialized in Template._uiApiLayout()-->
+                                    <button type="button" class="btn btn-block btn-hero-sm btn-hero-primary" data-toggle="layout" data-action="sidebar_toggle">
+                                        <i class="fa fa-bars mr-1"></i> Menu
+                                    </button>
+                                </div>
+                                <div class="col-6">
+                                    <!-- Class Toggle, functionality initialized in Helpers.coreToggleClass() -->
+                                    <button type="button" class="btn btn-block btn-hero-sm btn-hero-dark" data-toggle="class-toggle" data-target="#side-content" data-class="d-none">
+                                        <i class="fa fa-flask mr-1"></i> Filters
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- END Toggle Side Content -->
+
+                            <!-- Side Content -->
+                            <div id="side-content" class="d-none d-lg-block push">
+                                <div class="block">
+                                    <div class="block-header block-header-default">
+                                        <h3 class="block-title text-center" style="font-size: 25px"><b></b>Total Revenue</b></h3>
+                                    </div>
+                                    <div class="block-content text-center">
+                                        <h1>IDR 2000B</h1>
+                                    </div>
+                                </div>
+                                <div class="block">
+                                    <div class="block-header block-header-default">
+                                        <h3 class="block-title text-center" style="font-size: 25px"><b></b>Commision Earned</b></h3>
+                                    </div>
+                                    <div class="block-content text-center">
+                                        <h1>IDR 1500K</h1>
+                                    </div>
+                                </div>
+                                <div class="block">
+                                    <div class="block-header block-header-default">
+                                        <h3 class="block-title text-center" style="font-size: 25px"><b></b>My Bookings</b></h3>
+                                    </div>
+                                    <div class="block-content">
+                                        <table class="table" style="border: 0px">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Active</td>
+                                                    <td class="text-center">
+                                                        <div class="numberCircle">30</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Pending</td>
+                                                    <td class="text-center">
+                                                        <div class="numberCircle">5</div>
+                                                    </td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>Complete</td>
+                                                    <td class="text-center">
+                                                        <div class="numberCircle">8</div>
+                                                    </td>
+                                                </tr>                                       
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="block">
+                                        <div class="block-header block-header-default">
+                                            <h3 class="block-title text-center" style="font-size: 25px"><b></b>Invoice Status</b></h3>
+                                        </div>
+                                        <div class="block-content">
+                                            <span>1-30 days overdue</span> <span class="f-right"> Rp 0.00</span> <br>
+                                            <span>31-60 days overdue</span><span class="f-right">Rp 0.00</span><br>
+                                            <span>61-90 days overdue</span><span class="f-right">Rp 0.00</span><br>
+                                            <div class="text-center"><button class="btn btn-secondary"> View All </div></span><br>
+                                        </div>
+                                    </div>
+                                    <div class="block">
+                                            <div class="block-header block-header-default">
+                                                <h3 class="block-title text-center" style="font-size: 25px"><b></b>Bill Status</b></h3>
+                                            </div>
+                                            <div class="block-content">
+                                                <span>1-30 days overdue</span> <span class="f-right"> Rp 0.00</span> <br>
+                                                <span>31-60 days overdue</span><span class="f-right">Rp 0.00</span><br>
+                                                <span>61-90 days overdue</span><span class="f-right">Rp 0.00</span><br>
+                                                <div class="text-center"><button class="btn btn-secondary"> View All </div></span><br>
+                                            </div>
+                                        </div>
+                                <!-- END Amenities -->
+                            </div>
+                            <!-- END Side Content -->
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-xl-9 h100-scroll bg-body-dark">
+                        <!-- Main Content -->
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="block block-bordered mh-100">
+                                        <div class="block-content">
+                                            <div class="col-lg-12 invisible" data-toggle="appear">
+                                                <div class="block block-bordered">
+                                                    <div class="block-content">
+                                                        <div class="px-sm-3 pt-sm-3 clearfix" style="min-height: 260px;">
+                                                            <i class="fa fa-chart-line fa-2x text-gray-light float-right"></i>
+                                                            <span><h3>Summary</h3></span>
+                                                            <p>IDR 4.860.000</p>
+                                                            <p class="text-muted w-75">
+                                                                You had <strong>15</strong> orders today and <strong>12</strong> orders yesterday. You seem to be doing great, so keep it up!
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="block-content p-1 overflow-hidden">
+                                                        <!-- Sparkline Container -->
+                                                        <span class="js-sparkline" data-type="line"
+                                                            data-points="[340,390,360,420,385,366,440,470]"
+                                                            data-width="100%"
+                                                            data-height="189px"
+                                                            data-chart-range-min="320"
+                                                            data-fill-color="rgba(6,101,208,.1)"
+                                                            data-spot-color="transparent"
+                                                            data-min-spot-color="transparent"
+                                                            data-max-spot-color="transparent"
+                                                            data-highlight-spot-color="#0665d0"
+                                                            data-highlight-line-color="#0665d0"
+                                                            data-tooltip-prefix="$">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="block block-bordered mh-100">
+                                        <div class="block-header block-header-default">
+                                            <h3 class="block-title">Notifications</h3>
+                                        </div>
+                                        <div class="block-content">
+                                            <div class="col-lg-12 invisible" data-toggle="appear">
+                                                <b> <i class="fa fa-bell"></i>  Reminder, your invoice due date 3 days left</b> <span class="f-right">Today</span>
+                                                <hr>
+                                                <b> <i class="fa fa-plane"></i> You just add new flight booking for 2 person</b> <span class="f-right">Yesterday</span>
+                                                <hr>
+                                                <b> <i class="fa fa-shopping-bag"></i> Jelajah bumi Nabi is 4 seat left, booked before its gone</b> <span class="f-right">3 Days Ago</span>
+                                                <hr>
+                                                <b> <i class="fa fa-money-bill-alt"></i> You just Earned 1000k commissions</b> <span class="f-right">5 Days Ago</span>
+                                                <hr>
+                                                <b> <i class="fa fa-ban"></i> You canceled an Umroh VIP tour for 3 person</b> <span class="f-right">1 week ago</span>
+                                                <hr>
+                                                <b> <i class="fa fa-globe-asia"></i> You canceled an Umroh VIP tour for 3 person</b> <span class="f-right">1 week ago</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="block block-rounded block-bordered">
+                                        <div class="block-header block-header-default">
+                                            <h3 class="block-title">Bookings</h3>                                          
+                                        </div>
+                                        <div class="block-content">
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered table-striped table-vcenter">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Date <i class="fa fa-chevron-down"></i></th>
+                                                            <th>Number</th>
+                                                            <th>Type</th>
+                                                            <th>Amount</th>
+                                                            <th>Payment Status</th>
+                                                            <th class="text-center" style="width: 100px;">Actions</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="text-center">
+                                                                2019-01-21
+                                                            </td>
+                                                            <td class="font-w600">
+                                                                7465XXXXX
+                                                            </td>
+                                                            <td>
+                                                                Tour
+                                                            </td>
+                                                            <td>
+                                                                Rp. 2.000.000
+                                                            </td>
+                                                            <td>
+                                                               Pending
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <div class="but" style="font-size: 25px">
+                                                                    <a class="js-tooltip-enabled" data-toggle="tooltip" title="" data-original-title="Edit" href="javascript(0)">
+                                                                        <i class="far fa-file-pdf"></i>
+                                                                    </a>
+                                                                    <a class="js-tooltip-enabled" data-toggle="tooltip" title="" data-original-title="Edit" href="javascript(0)">
+                                                                        <i class="fa fa-download"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td class="text-center">
+                                                                    2019-01-21
+                                                                </td>
+                                                                <td class="font-w600">
+                                                                    7465XXXXX
+                                                                </td>
+                                                                <td>
+                                                                    Hotel
+                                                                </td>
+                                                                <td>
+                                                                    Rp. 565.000
+                                                                </td>
+                                                                <td>
+                                                                   Complete
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <div class="but" style="font-size: 25px">
+                                                                        <a class="js-tooltip-enabled" data-toggle="tooltip" title="" data-original-title="Edit" href="javascript(0)">
+                                                                            <i class="far fa-file-pdf"></i>
+                                                                        </a>
+                                                                        <a class="js-tooltip-enabled" data-toggle="tooltip" title="" data-original-title="Edit" href="javascript(0)">
+                                                                            <i class="fa fa-download"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                    <td class="text-center">
+                                                                        2019-01-21
+                                                                    </td>
+                                                                    <td class="font-w600">
+                                                                        7465XXXXX
+                                                                    </td>
+                                                                    <td>
+                                                                        Flight
+                                                                    </td>
+                                                                    <td>
+                                                                        Rp. 1.565.000
+                                                                    </td>
+                                                                    <td>
+                                                                       Complete
+                                                                    </td>
+                                                                    <td class="text-center">
+                                                                        <div class="but" style="font-size: 25px">
+                                                                            <a class="js-tooltip-enabled" data-toggle="tooltip" title="" data-original-title="Edit" href="javascript(0)">
+                                                                                <i class="far fa-file-pdf"></i>
+                                                                            </a>
+                                                                            <a class="js-tooltip-enabled" data-toggle="tooltip" title="" data-original-title="Edit" href="javascript(0)">
+                                                                                <i class="fa fa-download"></i>
+                                                                            </a>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                        <td class="text-center">
+                                                                            2019-01-21
+                                                                        </td>
+                                                                        <td class="font-w600">
+                                                                            7465XXXXX
+                                                                        </td>
+                                                                        <td>
+                                                                            Visa
+                                                                        </td>
+                                                                        <td>
+                                                                            Rp. 245.000
+                                                                        </td>
+                                                                        <td>
+                                                                           Pending
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            <div class="but" style="font-size: 25px">
+                                                                                <a class="js-tooltip-enabled" data-toggle="tooltip" title="" data-original-title="Edit" href="javascript(0)">
+                                                                                    <i class="far fa-file-pdf"></i>
+                                                                                </a>
+                                                                                <a class="js-tooltip-enabled" data-toggle="tooltip" title="" data-original-title="Edit" href="javascript(0)">
+                                                                                    <i class="fa fa-download"></i>
+                                                                                </a>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                            <td class="text-center">
+                                                                                2019-01-21
+                                                                            </td>
+                                                                            <td class="font-w600">
+                                                                                7465XXXXX
+                                                                            </td>
+                                                                            <td>
+                                                                                Tour
+                                                                            </td>
+                                                                            <td>
+                                                                                Rp. 2.000.000
+                                                                            </td>
+                                                                            <td>
+                                                                               Pending
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <div class="but" style="font-size: 25px">
+                                                                                    <a class="js-tooltip-enabled" data-toggle="tooltip" title="" data-original-title="Edit" href="javascript(0)">
+                                                                                        <i class="far fa-file-pdf"></i>
+                                                                                    </a>
+                                                                                    <a class="js-tooltip-enabled" data-toggle="tooltip" title="" data-original-title="Edit" href="javascript(0)">
+                                                                                        <i class="fa fa-download"></i>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END Main Content -->
+                    </div>
+                </div>
+                <!-- END Page Content -->
+
+            </main>
+            <!-- END Main Container -->
+        </div>
+        <!-- END Page Container -->
+
+        <!--
+            Dashmix JS Core
+
+            Vital libraries and plugins used in all pages. You can choose to not include this file if you would like
+            to handle those dependencies through webpack. Please check out assets/_es6/main/bootstrap.js for more info.
+
+            If you like, you could also include them separately directly from the assets/js/core folder in the following
+            order. That can come in handy if you would like to include a few of them (eg jQuery) from a CDN.
+
+            assets/js/core/jquery.min.js
+            assets/js/core/bootstrap.bundle.min.js
+            assets/js/core/simplebar.min.js
+            assets/js/core/jquery-scrollLock.min.js
+            assets/js/core/jquery.appear.min.js
+            assets/js/core/js.cookie.min.js
+        -->
+        <script src="assets/js/dashmix.core.min.js"></script>
+
+        <!--
+            Dashmix JS
+
+            Custom functionality including Blocks/Layout API as well as other vital and optional helpers
+            webpack is putting everything together at assets/_es6/main/app.js
+        -->
+        <script src="assets/js/dashmix.app.min.js"></script>
+
+        <!-- Page JS Plugins -->
+        <script src="assets/js/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+        <script src="assets/js/plugins/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+        <script src="assets/js/plugins/slick-carousel/slick.min.js"></script>
+
+        <!-- Page JS Helpers (BS Datepicker + Ion Range Slider + Slick Slider plugins) -->
+        <script>jQuery(function(){ Dashmix.helpers(['datepicker', 'rangeslider', 'slick']); });</script>
+
+        <!-- Page JS Plugins -->
+        <script src="assets/js/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+        <!-- Page JS Helpers (jQuery Sparkline Plugin) -->
+        <script>jQuery(function(){ Dashmix.helpers('sparkline'); });</script>
+    </body>
+</html>
+
+<style>
+    .numberCircle {
+        border-radius: 50%;
+        behavior: url(PIE.htc);
+        /* remove if you don't care about IE8 */
+        width: 12px;
+        height: 12px;
+        padding: 8px;
+        background: #fff;
+        border: 2px solid #666;
+        color: #666;
+        text-align: center;
+        font: 8px Arial, sans-serif;
+        box-sizing: initial
+    }
+    .f-right{
+        float: right;;
+    }
+    .mh-100{
+        min-height: 100%;
+    }
+</style>
