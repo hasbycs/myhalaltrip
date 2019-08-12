@@ -390,74 +390,188 @@ MAIN CONTENT LAYOUT
 
                     <!-- Side Content -->
                     <div id="side-content" class="d-none d-lg-block push">
-                        <div class="block">
-                            <div class="block-header block-header-default">
-                                <h3 class="block-title text-center" style="font-size: 25px"><b></b>Total Revenue</b></h3>
-                            </div>
-                            <div class="block-content text-center">
-                                <h1>IDR 2000B</h1>
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <button class="btn btn-primary btn-md btn-block"> ADD TOUR</button>
                             </div>
                         </div>
-                        <div class="block">
+                        <br>
+                        <div class="block block-rounded block-bordered">
                             <div class="block-header block-header-default">
-                                <h3 class="block-title text-center" style="font-size: 25px"><b></b>Commision Earned</b></h3>
-                            </div>
-                            <div class="block-content text-center">
-                                <h1>IDR 1500K</h1>
-                            </div>
-                        </div>
-                        <div class="block">
-                            <div class="block-header block-header-default">
-                                <h3 class="block-title text-center" style="font-size: 25px"><b></b>My Bookings</b></h3>
+                                <h3 class="block-title">
+                                    <i class="fa fa-address-card"></i> Tour Type
+                                </h3>
+                                <div class="block-options">
+                                    <button type="button" class="btn-block-option" data-toggle="block-option" data-action="content_toggle"></button>
+                                </div>
                             </div>
                             <div class="block-content">
-                                <table class="table" style="border: 0px">
-                                    <tbody>
-                                    <tr>
-                                        <td>Active</td>
-                                        <td class="text-center">
-                                            <div class="numberCircle">30</div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Pending</td>
-                                        <td class="text-center">
-                                            <div class="numberCircle">5</div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Complete</td>
-                                        <td class="text-center">
-                                            <div class="numberCircle">8</div>
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
+                                <div class="form-group">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="example-checkbox-inline1" name="example-checkbox-inline1">
+                                        <label class="form-check-label" for="example-checkbox-inline1">Fixed Time</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="example-checkbox-inline2" name="example-checkbox-inline2">
+                                        <label class="form-check-label" for="example-checkbox-inline2">Flexible Time</label>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="block">
+                        <div class="block block-rounded block-bordered">
                             <div class="block-header block-header-default">
-                                <h3 class="block-title text-center" style="font-size: 25px"><b></b>Invoice Status</b></h3>
+                                <h3 class="block-title">
+                                    <div class="row">
+                                        <div class="col-md">
+                                            <i class="fa fa-dollar-sign"></i> Price Setting <i class="fa fa-info"></i>
+                                        </div>
+                                    </div>
+                                </h3>
+                                <div class="block-options">
+                                    <button type="button" class="btn-block-option" data-toggle="block-option" data-action="content_toggle"></button>
+                                </div>
                             </div>
                             <div class="block-content">
-                                <span>1-30 days overdue</span> <span class="f-right"> Rp 0.00</span> <br>
-                                <span>31-60 days overdue</span><span class="f-right">Rp 0.00</span><br>
-                                <span>61-90 days overdue</span><span class="f-right">Rp 0.00</span><br>
-                                <div class="text-center"><button class="btn btn-secondary"> View All </div></span><br>
+                                <div class="form-group form-row">
+                                    <div class="col-5">
+                                        <input type="text" class="form-control form-control-alt" value="Quadruple" disabled>
+                                    </div>
+                                    <div class="col-5">
+                                        <input type="text" class="form-control form-control-alt" value="USD 2000" disabled>
+                                    </div>
+                                    <div class="col-2">
+                                        <button class="btn btn-info"> <i class="fa fa-window-close"></i></button>
+                                    </div>
+                                </div>
+                                <div class="form-group form-row">
+                                    <div class="col-5">
+                                        <input type="text" class="form-control form-control-alt" value="Triple" disabled>
+                                    </div>
+                                    <div class="col-5">
+                                        <input type="text" class="form-control form-control-alt" value="USD 2200" disabled>
+                                    </div>
+                                    <div class="col-2">
+                                        <button class="btn btn-info"> <i class="fa fa-window-close"></i></button>
+                                    </div>
+                                </div>
+                                <div class="form-group form-row">
+                                    <div class="col-6">
+                                        <div>
+                                            <select class="custom-select" id="select-price" name="select-price">
+                                                <option value="0">Quadruple</option>
+                                                <option value="1">Triple</option>
+                                                <option value="2">Single</option>
+                                                <option value="3">Commission</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 text-center">
+                                        <button class="btn btn-primary btn-md btn-block"> Add New</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="block">
+                        <div class="block block-rounded block-bordered">
                             <div class="block-header block-header-default">
-                                <h3 class="block-title text-center" style="font-size: 25px"><b></b>Bill Status</b></h3>
+                                <h3 class="block-title">
+                                    <div class="row">
+                                        <div class="col-md">
+                                            <i class="fa fa-calendar-alt"></i> Time Setting <i class="fa fa-info"></i>
+                                        </div>
+                                    </div>
+                                </h3>
+                                <div class="block-options">
+                                    <button type="button" class="btn-block-option" data-toggle="block-option" data-action="content_toggle"></button>
+                                </div>
                             </div>
                             <div class="block-content">
-                                <span>1-30 days overdue</span> <span class="f-right"> Rp 0.00</span> <br>
-                                <span>31-60 days overdue</span><span class="f-right">Rp 0.00</span><br>
-                                <span>61-90 days overdue</span><span class="f-right">Rp 0.00</span><br>
-                                <div class="text-center"><button class="btn btn-secondary"> View All </div></span><br>
+                                <label>Add Schedule Tour</label>
+                                <div class="form-group form-row">
+                                    <div class="col-6">
+                                        <input type="text" class="form-control form-control-alt" value="07/03/2019" disabled>
+                                    </div>
+                                    <div class="col-4">
+                                        <input type="text" class="form-control form-control-alt" value="25 Seat" disabled>
+                                    </div>
+                                    <div class="col-2">
+                                        <button class="btn btn-info"> <i class="fa fa-window-close"></i></button>
+                                    </div>
+                                </div>
+                                <div class="form-group form-row">
+                                    <div class="col-6">
+                                        <input type="text" class="form-control form-control-alt" value="06/04/2019" disabled>
+                                    </div>
+                                    <div class="col-4">
+                                        <input type="text" class="form-control form-control-alt" value="25 Seat" disabled>
+                                    </div>
+                                    <div class="col-2">
+                                        <button class="btn btn-info"> <i class="fa fa-window-close"></i></button>
+                                    </div>
+                                </div>
+                                <div class="form-group form-row">
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <input type="text" class="js-datepicker form-control js-datepicker-enabled" id="example-datepicker2" name="example-datepicker2" data-week-start="1" data-autoclose="true" data-today-highlight="true" data-date-format="mm/dd/yy" placeholder="mm/dd/yy">
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="fa fa-calendar-alt"></i>
+                                    </div>
+                                    <div class="col-5 text-center">
+                                        <button class="btn btn-primary btn-md btn-block"> Add New</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <!-- END Amenities -->
+                        <div class="block block-rounded block-bordered">
+                            <div class="block-header block-header-default">
+                                <h3 class="block-title">
+                                    <div class="row">
+                                        <div class="col-md">
+                                            <i class="fa fa-clock"></i> Duration </i>
+                                        </div>
+                                    </div>
+                                </h3>
+                                <div class="block-options">
+                                    <button type="button" class="btn-block-option" data-toggle="block-option" data-action="content_toggle"></button>
+                                </div>
+                            </div>
+                            <div class="block-content">
+                                <div class="form-group form-row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input type="text" class="js-datepicker form-control js-datepicker-enabled" id="example-datepicker3" name="example-datepicker3" data-week-start="1" data-autoclose="true" data-today-highlight="true" data-date-format="mm/dd/yy" placeholder="mm/dd/yy" value="07/03/2019">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block block-rounded block-bordered">
+                            <div class="block-header block-header-default">
+                                <h3 class="block-title">
+                                    <div class="row">
+                                        <div class="col-md">
+                                            <i class="fa fa-globe-asia"></i> Country </i>
+                                        </div>
+                                    </div>
+                                </h3>
+                                <div class="block-options">
+                                    <button type="button" class="btn-block-option" data-toggle="block-option" data-action="content_toggle"></button>
+                                </div>
+                            </div>
+                            <div class="block-content">
+                                <div class="form-group form-row">
+                                    <div class="col-12">
+                                        <select class="custom-select" id="select-country" name="select-country">
+                                            <option value="0">Negara Tujuan</option>
+                                            <option value="1">Indonesia</option>
+                                            <option value="2">Arab Saudi</option>
+                                            <option value="3">Palestina</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <!-- END Side Content -->
                 </div>
@@ -466,60 +580,78 @@ MAIN CONTENT LAYOUT
                 <!-- Main Content -->
                 <div class="content">
                     <div class="row">
-                        <div class="col-md-5">
-                            <div class="block block-bordered mh-100">
+                        <div class="col-md-5 border">
+                            <div class="block block-rounded mh-100">
+                                <div class="block-header block-header-default">
+                                    <h3 class="block-title">Contact Details</h3>
+                                </div>
                                 <div class="block-content">
-                                    <div class="col-lg-12 invisible" data-toggle="appear">
-                                        <div class="block block-bordered">
-                                            <div class="block-content">
-                                                <div class="px-sm-3 pt-sm-3 clearfix" style="min-height: 260px;">
-                                                    <i class="fa fa-chart-line fa-2x text-gray-light float-right"></i>
-                                                    <span><h3>Summary</h3></span>
-                                                    <p>IDR 4.860.000</p>
-                                                    <p class="text-muted w-75">
-                                                        You had <strong>15</strong> orders today and <strong>12</strong> orders yesterday. You seem to be doing great, so keep it up!
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="block-content p-1 overflow-hidden">
-                                                <!-- Sparkline Container -->
-                                                <span class="js-sparkline" data-type="line"
-                                                      data-points="[340,390,360,420,385,366,440,470]"
-                                                      data-width="100%"
-                                                      data-height="189px"
-                                                      data-chart-range-min="320"
-                                                      data-fill-color="rgba(6,101,208,.1)"
-                                                      data-spot-color="transparent"
-                                                      data-min-spot-color="transparent"
-                                                      data-max-spot-color="transparent"
-                                                      data-highlight-spot-color="#0665d0"
-                                                      data-highlight-line-color="#0665d0"
-                                                      data-tooltip-prefix="$">
-                                                        </span>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <p>Nama Lengkap : Lakasmana Tri Moerdani</p>
+                                    <p>Instansi : Perorangan</p>
+                                    <p>Alamat : Jl. Jawa B99-100 Jatibening Indah AL, Bekasi 17412</p>
+                                    <p>No. Handpone : 0822123123</p>
+                                    <p>Email : Laksamana@pladiso.com</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-7">
-                            <div class="block block-bordered mh-100">
+                        <div class="col-md-7 border">
+                            <div class="block block-rounded mh-100">
                                 <div class="block-header block-header-default">
-                                    <h3 class="block-title">Notifications</h3>
+                                    <h3 class="block-title">Booking Summary</h3>
                                 </div>
                                 <div class="block-content">
-                                    <div class="col-lg-12 invisible" data-toggle="appear">
-                                        <b> <i class="fa fa-bell"></i>  Reminder, your invoice due date 3 days left</b> <span class="f-right">Today</span>
-                                        <hr>
-                                        <b> <i class="fa fa-plane"></i> You just add new flight booking for 2 person</b> <span class="f-right">Yesterday</span>
-                                        <hr>
-                                        <b> <i class="fa fa-shopping-bag"></i> Jelajah bumi Nabi is 4 seat left, booked before its gone</b> <span class="f-right">3 Days Ago</span>
-                                        <hr>
-                                        <b> <i class="fa fa-money-bill-alt"></i> You just Earned 1000k commissions</b> <span class="f-right">5 Days Ago</span>
-                                        <hr>
-                                        <b> <i class="fa fa-ban"></i> You canceled an Umroh VIP tour for 3 person</b> <span class="f-right">1 week ago</span>
-                                        <hr>
-                                        <b> <i class="fa fa-globe-asia"></i> You canceled an Umroh VIP tour for 3 person</b> <span class="f-right">1 week ago</span>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="block-content block-content-full">
+                                                <img class="img-avatar img-avatar-thumb img-avatar-rounded" style="width:100px;height:100px" src="assets/media/avatars/avatar15.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <h3>Jelajah Bumi Nabi</h3>
+                                            <div class="table-responsive">
+                                                <table class="table" style="border: 0px">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>Hotel Category</td>
+                                                        <td>
+                                                            :
+                                                        </td>
+                                                        <td class="">
+                                                            4 Star
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Passenger</td>
+                                                        <td>
+                                                            :
+                                                        </td>
+                                                        <td class="">
+                                                            2 Adults 0 children
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tour Start Date</td>
+                                                        <td>
+                                                            :
+                                                        </td>
+                                                        <td class="">
+                                                            28-09-2019
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tour End Date</td>
+                                                        <td>
+                                                            :
+                                                        </td>
+                                                        <td class="">
+                                                            30-09-2019
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -528,165 +660,82 @@ MAIN CONTENT LAYOUT
                     <br>
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="block block-rounded block-bordered">
+                            <div class="block block-bordered">
                                 <div class="block-header block-header-default">
-                                    <h3 class="block-title">Bookings</h3>
+                                    <h3 class="block-title">PASSANGER DETAILS <i class="fa fa-chevron-down float-right"></i></h3>
                                 </div>
                                 <div class="block-content">
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered table-striped table-vcenter">
-                                            <thead>
-                                            <tr>
-                                                <th>Date <i class="fa fa-chevron-down"></i></th>
-                                                <th>Number</th>
-                                                <th>Type</th>
-                                                <th>Amount</th>
-                                                <th>Payment Status</th>
-                                                <th class="text-center" style="width: 100px;">Actions</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr>
-                                                <td class="text-center">
-                                                    2019-01-21
-                                                </td>
-                                                <td class="font-w600">
-                                                    7465XXXXX
-                                                </td>
-                                                <td>
-                                                    Tour
-                                                </td>
-                                                <td>
-                                                    Rp. 2.000.000
-                                                </td>
-                                                <td>
-                                                    Pending
-                                                </td>
-                                                <td class="text-center">
-                                                    <div class="but" style="font-size: 25px">
-                                                        <a class="js-tooltip-enabled" data-toggle="tooltip" title="" data-original-title="Edit" href="javascript(0)">
-                                                            <i class="far fa-file-pdf"></i>
-                                                        </a>
-                                                        <a class="js-tooltip-enabled" data-toggle="tooltip" title="" data-original-title="Edit" href="javascript(0)">
-                                                            <i class="fa fa-download"></i>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center">
-                                                    2019-01-21
-                                                </td>
-                                                <td class="font-w600">
-                                                    7465XXXXX
-                                                </td>
-                                                <td>
-                                                    Hotel
-                                                </td>
-                                                <td>
-                                                    Rp. 565.000
-                                                </td>
-                                                <td>
-                                                    Complete
-                                                </td>
-                                                <td class="text-center">
-                                                    <div class="but" style="font-size: 25px">
-                                                        <a class="js-tooltip-enabled" data-toggle="tooltip" title="" data-original-title="Edit" href="javascript(0)">
-                                                            <i class="far fa-file-pdf"></i>
-                                                        </a>
-                                                        <a class="js-tooltip-enabled" data-toggle="tooltip" title="" data-original-title="Edit" href="javascript(0)">
-                                                            <i class="fa fa-download"></i>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center">
-                                                    2019-01-21
-                                                </td>
-                                                <td class="font-w600">
-                                                    7465XXXXX
-                                                </td>
-                                                <td>
-                                                    Flight
-                                                </td>
-                                                <td>
-                                                    Rp. 1.565.000
-                                                </td>
-                                                <td>
-                                                    Complete
-                                                </td>
-                                                <td class="text-center">
-                                                    <div class="but" style="font-size: 25px">
-                                                        <a class="js-tooltip-enabled" data-toggle="tooltip" title="" data-original-title="Edit" href="javascript(0)">
-                                                            <i class="far fa-file-pdf"></i>
-                                                        </a>
-                                                        <a class="js-tooltip-enabled" data-toggle="tooltip" title="" data-original-title="Edit" href="javascript(0)">
-                                                            <i class="fa fa-download"></i>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center">
-                                                    2019-01-21
-                                                </td>
-                                                <td class="font-w600">
-                                                    7465XXXXX
-                                                </td>
-                                                <td>
-                                                    Visa
-                                                </td>
-                                                <td>
-                                                    Rp. 245.000
-                                                </td>
-                                                <td>
-                                                    Pending
-                                                </td>
-                                                <td class="text-center">
-                                                    <div class="but" style="font-size: 25px">
-                                                        <a class="js-tooltip-enabled" data-toggle="tooltip" title="" data-original-title="Edit" href="javascript(0)">
-                                                            <i class="far fa-file-pdf"></i>
-                                                        </a>
-                                                        <a class="js-tooltip-enabled" data-toggle="tooltip" title="" data-original-title="Edit" href="javascript(0)">
-                                                            <i class="fa fa-download"></i>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center">
-                                                    2019-01-21
-                                                </td>
-                                                <td class="font-w600">
-                                                    7465XXXXX
-                                                </td>
-                                                <td>
-                                                    Tour
-                                                </td>
-                                                <td>
-                                                    Rp. 2.000.000
-                                                </td>
-                                                <td>
-                                                    Pending
-                                                </td>
-                                                <td class="text-center">
-                                                    <div class="but" style="font-size: 25px">
-                                                        <a class="js-tooltip-enabled" data-toggle="tooltip" title="" data-original-title="Edit" href="javascript(0)">
-                                                            <i class="far fa-file-pdf"></i>
-                                                        </a>
-                                                        <a class="js-tooltip-enabled" data-toggle="tooltip" title="" data-original-title="Edit" href="javascript(0)">
-                                                            <i class="fa fa-download"></i>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h4>Passenger 1 * For International Destination only</h4>
+                                            <form class="form-inline mb-4" action="be_forms_layouts.html" method="POST" onsubmit="return false;">
+                                                <select class="custom-select" id="example-select-custom1" name="example-select-custom1">
+                                                    <option value="0">Title</option>
+                                                    <option value="1">Mr</option>
+                                                    <option value="2">Mrs</option>
+                                                </select>
+                                                <label class="sr-only" for="example-if-first">First Name</label>
+                                                <input type="email" class="form-control mb-2 mr-sm-2 mb-sm-0" id="example-if-first" name="example-if-email" placeholder="First Name">
+                                                <label class="sr-only" for="example-if-last">Last Name</label>
+                                                <input type="password" class="form-control mb-2 mr-sm-2 mb-sm-0" id="example-if-last" name="example-if-password" placeholder="Last Name">
+                                            </form>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <h4>Visa</h4>
+                                            <div class="form-group">
+                                                <input type="text" class="js-datepicker form-control js-datepicker-enabled" id="example-datepicker1" name="example-datepicker1" data-week-start="1" data-autoclose="true" data-today-highlight="true" data-date-format="mm/dd/yy" placeholder="mm/dd/yy">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h4>Date of Birth</h4>
+                                            <div class="form-group">
+                                                <input type="text" class="js-datepicker form-control js-datepicker-enabled" id="example-datepicker1" name="example-datepicker1" data-week-start="1" data-autoclose="true" data-today-highlight="true" data-date-format="mm/dd/yy" placeholder="mm/dd/yy">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h4>Passenger 2 * For International Destination only</h4>
+                                            <form class="form-inline mb-4" action="be_forms_layouts.html" method="POST" onsubmit="return false;">
+                                                <select class="custom-select" id="example-select-custom1" name="example-select-custom1">
+                                                    <option value="0">Title</option>
+                                                    <option value="1">Mr</option>
+                                                    <option value="2">Mrs</option>
+                                                </select>
+                                                <label class="sr-only" for="example-if-first">First Name</label>
+                                                <input type="email" class="form-control mb-2 mr-sm-2 mb-sm-0" id="example-if-first" name="example-if-email" placeholder="First Name">
+                                                <label class="sr-only" for="example-if-last">Last Name</label>
+                                                <input type="password" class="form-control mb-2 mr-sm-2 mb-sm-0" id="example-if-last" name="example-if-password" placeholder="Last Name">
+                                            </form>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <h4>Visa</h4>
+                                            <div class="form-group">
+                                                <input type="text" class="js-datepicker form-control js-datepicker-enabled" id="example-datepicker1" name="example-datepicker1" data-week-start="1" data-autoclose="true" data-today-highlight="true" data-date-format="mm/dd/yy" placeholder="mm/dd/yy">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h4>Date of Birth</h4>
+                                            <div class="form-group">
+                                                <input type="text" class="js-datepicker form-control js-datepicker-enabled" id="example-datepicker1" name="example-datepicker1" data-week-start="1" data-autoclose="true" data-today-highlight="true" data-date-format="mm/dd/yy" placeholder="mm/dd/yy">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8 centered">
+                            <div class="block block-bordered text-center">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="example-checkbox-default1" name="example-checkbox-default1">
+                                    <label class="form-check-label" for="example-checkbox-default1"><h3>Check, If you want to add passenger details later</h3></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2"></div>
                     </div>
                 </div>
                 <!-- END Main Content -->
@@ -732,33 +781,11 @@ MAIN CONTENT LAYOUT
 
 <!-- Page JS Helpers (BS Datepicker + Ion Range Slider + Slick Slider plugins) -->
 <script>jQuery(function(){ Dashmix.helpers(['datepicker', 'rangeslider', 'slick']); });</script>
-
-<!-- Page JS Plugins -->
-<script src="assets/js/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
-<!-- Page JS Helpers (jQuery Sparkline Plugin) -->
-<script>jQuery(function(){ Dashmix.helpers('sparkline'); });</script>
 </body>
 </html>
 
 <style>
-    .numberCircle {
-        border-radius: 50%;
-        behavior: url(PIE.htc);
-        /* remove if you don't care about IE8 */
-        width: 12px;
-        height: 12px;
-        padding: 8px;
-        background: #fff;
-        border: 2px solid #666;
-        color: #666;
-        text-align: center;
-        font: 8px Arial, sans-serif;
-        box-sizing: initial
-    }
-    .f-right{
-        float: right;;
-    }
-    .mh-100{
+    .mh-100 {
         min-height: 100%;
     }
 </style>
