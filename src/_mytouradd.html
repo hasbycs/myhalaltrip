@@ -33,6 +33,9 @@
     <link rel="stylesheet" href="assets/js/plugins/slick-carousel/slick.css">
     <link rel="stylesheet" href="assets/js/plugins/slick-carousel/slick-theme.css">
 
+    <link rel="stylesheet" href="assets/js/plugins/summernote/summernote-bs4.css">
+    <link rel="stylesheet" href="assets/js/plugins/simplemde/simplemde.min.css">
+
     <!-- Fonts and Dashmix framework -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,400i,600,700">
     <link rel="stylesheet" id="css-main" href="assets/css/dashmix.min.css">
@@ -580,162 +583,150 @@ MAIN CONTENT LAYOUT
                 <!-- Main Content -->
                 <div class="content">
                     <div class="row">
-                        <div class="col-md-5 border">
-                            <div class="block block-rounded mh-100">
-                                <div class="block-header block-header-default">
-                                    <h3 class="block-title">Contact Details</h3>
-                                </div>
-                                <div class="block-content">
-                                    <p>Nama Lengkap : Lakasmana Tri Moerdani</p>
-                                    <p>Instansi : Perorangan</p>
-                                    <p>Alamat : Jl. Jawa B99-100 Jatibening Indah AL, Bekasi 17412</p>
-                                    <p>No. Handpone : 0822123123</p>
-                                    <p>Email : Laksamana@pladiso.com</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-7 border">
-                            <div class="block block-rounded mh-100">
-                                <div class="block-header block-header-default">
-                                    <h3 class="block-title">Booking Summary</h3>
-                                </div>
-                                <div class="block-content">
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <div class="block-content block-content-full">
-                                                <img class="img-avatar img-avatar-thumb img-avatar-rounded" style="width:100px;height:100px" src="assets/media/avatars/avatar15.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-9">
-                                            <h3>Jelajah Bumi Nabi</h3>
-                                            <div class="table-responsive">
-                                                <table class="table" style="border: 0px">
-                                                    <tbody>
-                                                    <tr>
-                                                        <td>Hotel Category</td>
-                                                        <td>
-                                                            :
-                                                        </td>
-                                                        <td class="">
-                                                            4 Star
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Passenger</td>
-                                                        <td>
-                                                            :
-                                                        </td>
-                                                        <td class="">
-                                                            2 Adults 0 children
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Tour Start Date</td>
-                                                        <td>
-                                                            :
-                                                        </td>
-                                                        <td class="">
-                                                            28-09-2019
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Tour End Date</td>
-                                                        <td>
-                                                            :
-                                                        </td>
-                                                        <td class="">
-                                                            30-09-2019
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <button class="btn btn-outline-primary mb-lg-0 ml-3">Back to My Tour</button>
                     </div>
                     <br>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="block block-bordered">
-                                <div class="block-header block-header-default">
-                                    <h3 class="block-title">PASSANGER DETAILS <i class="fa fa-chevron-down float-right"></i></h3>
-                                </div>
                                 <div class="block-content">
                                     <div class="row">
-                                        <div class="col-md-6">
-                                            <h4>Passenger 1 * For International Destination only</h4>
+                                        <div class="col-md-12">
                                             <form class="form-inline mb-4" action="be_forms_layouts.html" method="POST" onsubmit="return false;">
-                                                <select class="custom-select" id="example-select-custom1" name="example-select-custom1">
-                                                    <option value="0">Title</option>
-                                                    <option value="1">Mr</option>
-                                                    <option value="2">Mrs</option>
-                                                </select>
-                                                <label class="sr-only" for="example-if-first">First Name</label>
-                                                <input type="email" class="form-control mb-2 mr-sm-2 mb-sm-0" id="example-if-first" name="example-if-email" placeholder="First Name">
-                                                <label class="sr-only" for="example-if-last">Last Name</label>
-                                                <input type="password" class="form-control mb-2 mr-sm-2 mb-sm-0" id="example-if-last" name="example-if-password" placeholder="Last Name">
+                                                <h4>Product Detail</h4>
+                                                <input type="email" class="form-control mb-2 mr-sm-2 mb-sm-0 vw-100" id="example-name" name="example-if-email" placeholder="type name here...">
                                             </form>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <h4>Visa</h4>
-                                            <div class="form-group">
-                                                <input type="text" class="js-datepicker form-control js-datepicker-enabled" id="example-datepicker1" name="example-datepicker1" data-week-start="1" data-autoclose="true" data-today-highlight="true" data-date-format="mm/dd/yy" placeholder="mm/dd/yy">
+                                            <div class="block block-rounded block-bordered mt-lg-4">
+                                                <div class="block-header block-header-default">
+                                                    <h3 class="block-title">Description</h3>
+                                                    <div class="block-options">
+                                                        <button type="button" class="btn-block-option">
+                                                            <i class="si si-settings"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="block-content block-content-full">
+                                                    <!-- Summernote Container -->
+                                                    <div class="js-summernote"></div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <h4>Date of Birth</h4>
-                                            <div class="form-group">
-                                                <input type="text" class="js-datepicker form-control js-datepicker-enabled" id="example-datepicker1" name="example-datepicker1" data-week-start="1" data-autoclose="true" data-today-highlight="true" data-date-format="mm/dd/yy" placeholder="mm/dd/yy">
+                                            <div class="block block-rounded block-bordered mt-lg-4">
+                                                <div class="block-header block-header-default">
+                                                    <h3 class="block-title"><Inclusions/h3>
+                                                    <div class="block-options">
+                                                        <button type="button" class="btn-block-option">
+                                                            <i class="si si-settings"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="block-content block-content-full">
+                                                    <!-- Summernote Container -->
+                                                    <div class="js-summernote"></div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <h4>Passenger 2 * For International Destination only</h4>
-                                            <form class="form-inline mb-4" action="be_forms_layouts.html" method="POST" onsubmit="return false;">
-                                                <select class="custom-select" id="example-select-custom1" name="example-select-custom1">
-                                                    <option value="0">Title</option>
-                                                    <option value="1">Mr</option>
-                                                    <option value="2">Mrs</option>
-                                                </select>
-                                                <label class="sr-only" for="example-if-first">First Name</label>
-                                                <input type="email" class="form-control mb-2 mr-sm-2 mb-sm-0" id="example-if-first" name="example-if-email" placeholder="First Name">
-                                                <label class="sr-only" for="example-if-last">Last Name</label>
-                                                <input type="password" class="form-control mb-2 mr-sm-2 mb-sm-0" id="example-if-last" name="example-if-password" placeholder="Last Name">
-                                            </form>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <h4>Visa</h4>
-                                            <div class="form-group">
-                                                <input type="text" class="js-datepicker form-control js-datepicker-enabled" id="example-datepicker1" name="example-datepicker1" data-week-start="1" data-autoclose="true" data-today-highlight="true" data-date-format="mm/dd/yy" placeholder="mm/dd/yy">
+                                            <div class="block block-rounded block-bordered mt-lg-4">
+                                                <div class="block-header block-header-default">
+                                                    <h3 class="block-title">Halal Facilities</h3>
+                                                </div>
+                                                <div class="block-content block-content-full ml-4">
+                                                    <div class="form-group form-row">
+                                                        <div class="custom-control custom-checkbox custom-control-primary mb-1 col-6">
+                                                            <input type="checkbox" class="custom-control-input" id="example-checkbox-custom1" name="example-checkbox-custom1">
+                                                            <label class="custom-control-label" for="example-checkbox-custom1">Prayer direction marked in the room</label>
+                                                        </div>
+                                                        <div class="custom-control custom-checkbox custom-control-primary mb-1 col-6">
+                                                            <input type="checkbox" class="custom-control-input" id="example-checkbox-custom2" name="example-checkbox-custom2">
+                                                            <label class="custom-control-label" for="example-checkbox-custom2">No nightclub in hotel</label>
+                                                        </div>
+                                                        <div class="custom-control custom-checkbox custom-control-primary mb-1 col-6">
+                                                            <input type="checkbox" class="custom-control-input" id="example-checkbox-custom3" name="example-checkbox-custom3">
+                                                            <label class="custom-control-label" for="example-checkbox-custom3">No Alcohol served</label>
+                                                        </div>
+                                                        <div class="custom-control custom-checkbox custom-control-primary mb-1 col-6">
+                                                            <input type="checkbox" class="custom-control-input" id="example-checkbox-custom4" name="example-checkbox-custom1">
+                                                            <label class="custom-control-label" for="example-checkbox-custom1">Not part of gambling resort</label>
+                                                        </div>
+                                                        <div class="custom-control custom-checkbox custom-control-primary mb-1 col-6">
+                                                            <input type="checkbox" class="custom-control-input" id="example-checkbox-custom5" name="example-checkbox-custom2">
+                                                            <label class="custom-control-label" for="example-checkbox-custom2">Bidet or Jet in the hotel washroom</label>
+                                                        </div>
+                                                        <div class="custom-control custom-checkbox custom-control-primary mb-1 col-6">
+                                                            <input type="checkbox" class="custom-control-input" id="example-checkbox-custom6" name="example-checkbox-custom3">
+                                                            <label class="custom-control-label" for="example-checkbox-custom3">Muslim tour guide included in the package</label>
+                                                        </div>
+                                                        <div class="custom-control custom-checkbox custom-control-primary mb-1 col-6">
+                                                            <input type="checkbox" class="custom-control-input" id="example-checkbox-custom7" name="example-checkbox-custom2">
+                                                            <label class="custom-control-label" for="example-checkbox-custom2">No Adult TV cahnnels in the room</label>
+                                                        </div>
+                                                        <div class="custom-control custom-checkbox custom-control-primary mb-1 col-6">
+                                                            <input type="checkbox" class="custom-control-input" id="example-checkbox-custom8" name="example-checkbox-custom3">
+                                                            <label class="custom-control-label" for="example-checkbox-custom3">Seafood served in the hotel</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <h4>Date of Birth</h4>
-                                            <div class="form-group">
-                                                <input type="text" class="js-datepicker form-control js-datepicker-enabled" id="example-datepicker1" name="example-datepicker1" data-week-start="1" data-autoclose="true" data-today-highlight="true" data-date-format="mm/dd/yy" placeholder="mm/dd/yy">
+                                            <div class="block block-rounded block-bordered mt-lg-4">
+                                                <div class="block-header block-header-default">
+                                                    <h3 class="block-title">Booking Condition</h3>
+                                                    <div class="block-options">
+                                                        <button type="button" class="btn-block-option">
+                                                            <i class="si si-settings"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="block-content block-content-full">
+                                                    <!-- Summernote Container -->
+                                                    <div class="js-summernote"></div>
+                                                </div>
+                                            </div>
+                                            <div class="block block-rounded block-bordered mt-lg-4">
+                                                <div class="block-header block-header-default">
+                                                    <h3 class="block-title">Itinerary</h3>
+                                                    <div class="block-options">
+                                                        <button type="button" class="btn-block-option">
+                                                            <i class="si si-settings"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="block-content block-content-full">
+                                                    <!-- Summernote Container -->
+                                                    <div class="js-summernote"></div>
+                                                </div>
+                                            </div>
+                                            <div class="block block-rounded block-bordered mt-lg-4">
+                                                <div class="block-header block-header-default">
+                                                    <h3 class="block-title">FAQ</h3>
+                                                    <div class="block-options">
+                                                        <button type="button" class="btn-block-option">
+                                                            <i class="si si-settings"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="block-content block-content-full">
+                                                    <!-- Summernote Container -->
+                                                    <div class="js-summernote"></div>
+                                                </div>
+                                            </div>
+                                            <div class="block block-rounded block-bordered mt-lg-4">
+                                                <div class="block-header">
+                                                    <h3 class="block-title">Add Image <button class="btn btn-outline-primary btn-group-sm ml-3"><i class="fa fa-plus"></i></button></h3>
+
+                                                </div>
+                                                <div class="block-content block-content-full">
+                                                    <div class="row">
+                                                        <div class="col-2">
+                                                            <div>
+                                                                <img class="img-fluid" src="assets/media/photos/photo15.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-2"></div>
-                        <div class="col-md-8 centered">
-                            <div class="block block-bordered text-center">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="example-checkbox-default1" name="example-checkbox-default1">
-                                    <label class="form-check-label" for="example-checkbox-default1"><h3>Check, If you want to add passenger details later</h3></label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2"></div>
                     </div>
                 </div>
                 <!-- END Main Content -->
@@ -764,28 +755,30 @@ MAIN CONTENT LAYOUT
     assets/js/core/jquery.appear.min.js
     assets/js/core/js.cookie.min.js
 -->
-<script src="assets/js/dashmix.core.min.js"></script>
+    <script src="assets/js/dashmix.core.min.js"></script>
 
-<!--
-    Dashmix JS
+    <!--
+        Dashmix JS
 
-    Custom functionality including Blocks/Layout API as well as other vital and optional helpers
-    webpack is putting everything together at assets/_es6/main/app.js
--->
-<script src="assets/js/dashmix.app.min.js"></script>
+        Custom functionality including Blocks/Layout API as well as other vital and optional helpers
+        webpack is putting everything together at assets/_es6/main/app.js
+    -->
+    <script src="assets/js/dashmix.app.min.js"></script>
 
-<!-- Page JS Plugins -->
-<script src="assets/js/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
-<script src="assets/js/plugins/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
-<script src="assets/js/plugins/slick-carousel/slick.min.js"></script>
+    <!-- Page JS Plugins -->
+    <script src="assets/js/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/plugins/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+    <script src="assets/js/plugins/slick-carousel/slick.min.js"></script>
+    <script src="assets/js/plugins/summernote/summernote-bs4.min.js"></script>
+    <script src="assets/js/plugins/simplemde/simplemde.min.js"></script>
+    <script src="assets/js/plugins/ckeditor/ckeditor.js"></script>
+    <!-- Page JS Helpers (BS Datepicker + Ion Range Slider + Slick Slider plugins) -->
+    <script>jQuery(function(){ Dashmix.helpers(['datepicker', 'rangeslider', 'slick', 'summernote', 'simplemde', 'ckeditor']); });</script>
+    </body>
+    </html>
 
-<!-- Page JS Helpers (BS Datepicker + Ion Range Slider + Slick Slider plugins) -->
-<script>jQuery(function(){ Dashmix.helpers(['datepicker', 'rangeslider', 'slick']); });</script>
-</body>
-</html>
-
-<style>
-    .mh-100 {
-        min-height: 100%;
-    }
-</style>
+    <style>
+        .mh-100 {
+            min-height: 100%;
+        }
+    </style>

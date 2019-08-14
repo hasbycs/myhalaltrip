@@ -33,9 +33,13 @@
     <link rel="stylesheet" href="assets/js/plugins/slick-carousel/slick.css">
     <link rel="stylesheet" href="assets/js/plugins/slick-carousel/slick-theme.css">
 
+    <link rel="stylesheet" href="assets/js/plugins/summernote/summernote-bs4.css">
+    <link rel="stylesheet" href="assets/js/plugins/simplemde/simplemde.min.css">
+
     <!-- Fonts and Dashmix framework -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,400i,600,700">
     <link rel="stylesheet" id="css-main" href="assets/css/dashmix.min.css">
+    <link rel="stylesheet" href="assets/js/plugins/select2/css/select2.min.css">
 
     <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
     <!-- <link rel="stylesheet" id="css-theme" href="assets/css/themes/xwork.min.css"> -->
@@ -237,12 +241,12 @@ MAIN CONTENT LAYOUT
         <div class="content-header bg-xwork-dark">
             <!-- Logo -->
             <a class="link-fx font-size-lg text-white" href="index.html">
-                        <span class="smini-visible">
-                            <span class="text-white-75">  <i class="nav-main-link-icon fa fa-smile text-muted"></i></span>
-                        </span>
+                <span class="smini-visible">
+                    <span class="text-white-75">  <i class="nav-main-link-icon fa fa-smile text-muted"></i></span>
+                </span>
                 <span class="smini-hidden">
-                            <span class="text-white-75">My</span>HalalTrip
-                        </span>
+                    <span class="text-white-75">My</span>HalalTrip
+                </span>
             </a>
             <!-- END Logo -->
 
@@ -358,7 +362,6 @@ MAIN CONTENT LAYOUT
 
     <!-- Main Container -->
     <main id="main-container">
-
         <!-- Page Content -->
         <div class="row no-gutters flex-lg-10-auto">
             <div class="col-lg-5 col-xl-3 h100-scroll">
@@ -391,90 +394,12 @@ MAIN CONTENT LAYOUT
 
                     <!-- Side Content -->
                     <div id="side-content" class="d-none d-lg-block push">
-                        <div class="block">
-                            <div class="block-header block-header-default">
-                                <h1 class="block-title text-center" style="font-size: 28px"><b>Payment Details &nbsp;  <i class="fab fa-paypal"></i></b></h1>
-                            </div>
-                            <div class="block-content">
-                                <p>Order Details</p>
-                                <div class="table-responsive">
-                                    <table class="table" style="border: 0px">
-                                        <tbody>
-                                        <tr>
-                                            <td>Sub Total</td>
-                                            <td>
-                                                :
-                                            </td>
-                                            <td class="text-center">
-                                                USD 1500
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Commissions</td>
-                                            <td>
-                                                :
-                                            </td>
-                                            <td class="text-center">
-                                                USD 150
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Grand Total</td>
-                                            <td>
-                                                :
-                                            </td>
-                                            <td class="text-center">
-                                                USD 1350
-                                            </td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="border border-secondary block-content block-content-full">
-                                    <div class="row">
-                                        <div class="col-md-6 text-center"> <h5>Promo Code</h5></div>
-                                        <div class="col-md-6 text-center"> <button class="btn btn-info">Apply</button></div>
-                                    </div>
-                                </div>
-                                <br>
-                                <div class="form-group">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="example-checkbox-default1" name="example-checkbox-default1">
-                                        <label class="form-check-label" for="example-checkbox-default1">I accept the Termn & Conditions and Refund Polices</label>
-                                        <input class="form-check-input" type="checkbox" value="" id="example-checkbox-default2" name="example-checkbox-default2">
-                                        <label class="form-check-label" for="example-checkbox-default1">I acknowledge the risk if i do not purchase travel insurance against delays and cancellations due to mushaps, accident, insolvency, etc</label>
-                                    </div>
-                                    <br>
-                                    <div>
-                                        <select class="custom-select" id="example-select-custom1" name="example-select-custom1">
-                                            <option value="0">Deposit Payment</option>
-                                            <option value="1">DP 10%</option>
-                                            <option value="2">Full Payment</option>
-                                        </select>
-                                        <br>
-                                    </div>
-                                    <br>
-                                    <div>
-                                        <select class="custom-select" id="example-select-custom2" name="example-select-custom2">
-                                            <option value="0">Payment Method</option>
-                                            <option value="1">Cash</option>
-                                            <option value="2">Manual Transfer</option>
-                                            <option value="2">Virtual Account</option>
-                                        </select>
-                                    </div>
-                                    <br>
-                                    <div>
-                                        <select class="custom-select" id="example-select-custom3" name="example-select-custom3">
-                                            <option value="0">Choose Bank</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="btn-group float-right" role="group" aria-label="Horizontal Primary">
-                                    <button type="button" class="btn btn-primary">Make Payment</button>
-                                </div>
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <button class="btn btn-primary btn-md btn-block"> SAVE</button>
                             </div>
                         </div>
-                        <!-- END Amenities -->
+                        <br>
                     </div>
                     <!-- END Side Content -->
                 </div>
@@ -483,162 +408,88 @@ MAIN CONTENT LAYOUT
                 <!-- Main Content -->
                 <div class="content">
                     <div class="row">
-                        <div class="col-md-5 border">
-                            <div class="block block-rounded mh-100">
-                                <div class="block-header block-header-default">
-                                    <h3 class="block-title">Contact Details</h3>
-                                </div>
-                                <div class="block-content">
-                                    <p>Nama Lengkap : Lakasmana Tri Moerdani</p>
-                                    <p>Instansi : Perorangan</p>
-                                    <p>Alamat : Jl. Jawa B99-100 Jatibening Indah AL, Bekasi 17412</p>
-                                    <p>No. Handpone : 0822123123</p>
-                                    <p>Email : Laksamana@pladiso.com</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-7 border">
-                            <div class="block block-rounded mh-100">
-                                <div class="block-header block-header-default">
-                                    <h3 class="block-title">Booking Summary</h3>
-                                </div>
-                                <div class="block-content">
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <div class="block-content block-content-full">
-                                                <img class="img-avatar img-avatar-thumb img-avatar-rounded" style="width:100px;height:100px" src="assets/media/avatars/avatar15.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-9">
-                                            <h3>Jelajah Bumi Nabi</h3>
-                                            <div class="table-responsive">
-                                                <table class="table" style="border: 0px">
-                                                    <tbody>
-                                                    <tr>
-                                                        <td>Hotel Category</td>
-                                                        <td>
-                                                            :
-                                                        </td>
-                                                        <td class="">
-                                                            4 Star
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Passenger</td>
-                                                        <td>
-                                                            :
-                                                        </td>
-                                                        <td class="">
-                                                            2 Adults 0 children
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Tour Start Date</td>
-                                                        <td>
-                                                            :
-                                                        </td>
-                                                        <td class="">
-                                                            28-09-2019
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Tour End Date</td>
-                                                        <td>
-                                                            :
-                                                        </td>
-                                                        <td class="">
-                                                            30-09-2019
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="row">
                         <div class="col-md-12">
                             <div class="block block-bordered">
                                 <div class="block-header block-header-default">
-                                    <h3 class="block-title">PASSANGER DETAILS <i class="fa fa-chevron-down float-right"></i></h3>
+                                    <h3 class="block-title">
+                                        <div class="row">
+                                            <div class="col-md">
+                                               <h4> Costumer Detail </h4>
+                                            </div>
+                                        </div>
+                                    </h3>
+                                    <div class="block-options">
+                                        <button type="button" class="btn-block-option" data-toggle="block-option" data-action="content_toggle"></button>
+                                    </div>
                                 </div>
                                 <div class="block-content">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <h4>Passenger 1 * For International Destination only</h4>
-                                            <form class="form-inline mb-4" action="be_forms_layouts.html" method="POST" onsubmit="return false;">
-                                                <select class="custom-select" id="example-select-custom1" name="example-select-custom1">
-                                                    <option value="0">Title</option>
-                                                    <option value="1">Mr</option>
-                                                    <option value="2">Mrs</option>
-                                                </select>
-                                                <label class="sr-only" for="example-if-first">First Name</label>
-                                                <input type="email" class="form-control mb-2 mr-sm-2 mb-sm-0" id="example-if-first" name="example-if-email" placeholder="First Name">
-                                                <label class="sr-only" for="example-if-last">Last Name</label>
-                                                <input type="password" class="form-control mb-2 mr-sm-2 mb-sm-0" id="example-if-last" name="example-if-password" placeholder="Last Name">
-                                            </form>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <h4>Visa</h4>
-                                            <div class="form-group">
-                                                <input class="form-control" type="text" id="example-datepicker1" name="example-datepicker1" data-week-start="1" data-autoclose="true" data-today-highlight="true">
+                                    <!-- <div class="row"> -->
+                                        <form class="" action="be_forms_layouts.html" method="POST" onsubmit="return false;">
+                                            <div class="form-group row">
+                                                <label class="col-sm-3 col-form-label" for="example-hf-email">Nama Depan</label>
+                                                <div class="col-sm-6">
+                                                    <input type="email" class="form-control" id="example-hf-email" name="example-hf-email" placeholder="">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <h4>Date of Birth</h4>
-                                            <div class="form-group">
-                                                <input type="text" class="js-datepicker form-control js-datepicker-enabled" id="example-datepicker1" name="example-datepicker1" data-week-start="1" data-autoclose="true" data-today-highlight="true" data-date-format="mm/dd/yy" placeholder="mm/dd/yy">
+                                            <div class="form-group row">
+                                                <label class="col-sm-3 col-form-label" for="example-hf-password">Nama Belakang</label>
+                                                <div class="col-sm-6">
+                                                    <input type="password" class="form-control" id="example-hf-password" name="example-hf-password" placeholder="">
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <h4>Passenger 2 * For International Destination only</h4>
-                                            <form class="form-inline mb-4" action="be_forms_layouts.html" method="POST" onsubmit="return false;">
-                                                <select class="custom-select" id="example-select-custom1" name="example-select-custom1">
-                                                    <option value="0">Title</option>
-                                                    <option value="1">Mr</option>
-                                                    <option value="2">Mrs</option>
-                                                </select>
-                                                <label class="sr-only" for="example-if-first">First Name</label>
-                                                <input type="email" class="form-control mb-2 mr-sm-2 mb-sm-0" id="example-if-first" name="example-if-email" placeholder="First Name">
-                                                <label class="sr-only" for="example-if-last">Last Name</label>
-                                                <input type="password" class="form-control mb-2 mr-sm-2 mb-sm-0" id="example-if-last" name="example-if-password" placeholder="Last Name">
-                                            </form>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <h4>Visa</h4>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" id="example-datepicker1" name="example-datepicker1" data-week-start="1" data-autoclose="true" data-today-highlight="true" >
+                                             <div class="form-group row">
+                                                <label class="col-sm-3 col-form-label" for="example-hf-email">Email</label>
+                                                <div class="col-sm-6">
+                                                    <input type="email" class="form-control" id="example-hf-email" name="example-hf-email" placeholder="">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <h4>Date of Birth</h4>
-                                            <div class="form-group">
-                                                <input type="text" class="js-datepicker form-control js-datepicker-enabled" id="example-datepicker1" name="example-datepicker1" data-week-start="1" data-autoclose="true" data-today-highlight="true" data-date-format="mm/dd/yy" placeholder="mm/dd/yy">
+                                            <div class="form-group row">
+                                                <label class="col-sm-3 col-form-label" for="example-hf-password">Phone</label>
+                                                <div class="col-sm-6">
+                                                    <input type="password" class="form-control" id="example-hf-password" name="example-hf-password" placeholder="">
+                                                </div>
+                                            </div> <div class="form-group row">
+                                                <label class="col-sm-3 col-form-label" for="example-hf-email">Addresses</label>
+                                                <div class="col-sm-6">
+                                                    <input type="email" class="form-control" id="example-hf-email" name="example-hf-email" placeholder="">
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
+                                            <div class="form-group row">
+                                                <label class="col-sm-3 col-form-label" for="example-hf-password">Country</label>
+                                                <div class="col-sm-6">
+                                                    <select class="js-select2 form-control" id="example-select2" name="example-select2" style="width: 100%;" data-placeholder="Type here...">
+                                                        <option></option><!-- Required for data-placeholder attribute to work with Select2 plugin -->
+                                                        <option value="1">Indonesia</option>
+                                                    </select>
+                                                </div>
+                                            </div> <div class="form-group row">
+                                                <label class="col-sm-3 col-form-label" for="example-hf-email">Province/State</label>
+                                                <div class="col-sm-6">
+                                                    <select class="js-select2 form-control" id="example-select2" name="example-select2" style="width: 100%;" data-placeholder="Type here...">
+                                                        <option></option><!-- Required for data-placeholder attribute to work with Select2 plugin -->
+                                                        <option value="1">Jawa Barat</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-sm-3 col-form-label" for="example-hf-password">City</label>
+                                                <div class="col-sm-6">
+                                                    <select class="js-select2 form-control" id="example-select2" name="example-select2" style="width: 100%;" data-placeholder="Type here...">
+                                                        <option></option><!-- Required for data-placeholder attribute to work with Select2 plugin -->
+                                                        <option value="1">Bekasi</option>
+                                                    </select>
+                                                </div>
+                                            </div> <div class="form-group row">
+                                                <label class="col-sm-3 col-form-label" for="example-hf-email">Zip</label>
+                                                <div class="col-sm-6">
+                                                    <input type="email" class="form-control" id="example-hf-email" name="example-hf-email" placeholder="">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    <!-- </div> -->
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-2"></div>
-                        <div class="col-md-8 centered">
-                            <div class="block block-bordered text-center">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="example-checkbox-default1" name="example-checkbox-default1">
-                                    <label class="form-check-label" for="example-checkbox-default1"><h3>Check, If you want to add passenger details later</h3></label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2"></div>
                     </div>
                 </div>
                 <!-- END Main Content -->
@@ -681,9 +532,12 @@ MAIN CONTENT LAYOUT
 <script src="assets/js/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
 <script src="assets/js/plugins/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
 <script src="assets/js/plugins/slick-carousel/slick.min.js"></script>
-
+<script src="assets/js/plugins/summernote/summernote-bs4.min.js"></script>
+<script src="assets/js/plugins/simplemde/simplemde.min.js"></script>
+<script src="assets/js/plugins/ckeditor/ckeditor.js"></script>
+<script src="assets/js/plugins/select2/js/select2.full.min.js"></script>
 <!-- Page JS Helpers (BS Datepicker + Ion Range Slider + Slick Slider plugins) -->
-<script>jQuery(function(){ Dashmix.helpers(['datepicker', 'rangeslider', 'slick']); });</script>
+<script>jQuery(function(){ Dashmix.helpers(['datepicker', 'rangeslider', 'slick', 'summernote', 'simplemde', 'ckeditor', 'select2']); });</script>
 </body>
 </html>
 
