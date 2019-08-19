@@ -113,18 +113,17 @@
                     </p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-6">
-                    <select class="browser-default custom-select">
-                        <option selected>Jadwal</option>
-                        <option value="1">28</option>
-                        <option value="2">27</option>
-                        <option value="3">17</option>
-                        <option value="4">28</option>
+            <div class="form-group form-row">
+                <div class="col-md-2"></div>
+                <div class="col-md">
+                    <select class="custom-select" id="select-price" name="select-price">
+                        <option value="0">Jadwal</option>
+                        <option value="1">28-okt-2019</option>
+                        <option value="2">17-Nov-2019</option>
                     </select>
                 </div>
 
-                <div class="col-6">
+                <div class="col-md">
                     <select class="browser-default custom-select">
                         <option selected>Hotel</option>
                         <option value="1">Qudrup</option>
@@ -133,7 +132,7 @@
                         <option value="4">Single</option>
                     </select>
                 </div>
-                <div class="col-6">
+                <div class="col-md">
                     <select class="browser-default custom-select">
                         <option selected>Person</option>
                         <option value="1">1</option>
@@ -142,12 +141,14 @@
                         <option value="4">4</option>
                     </select>
                 </div>
-                <div class="col-6">
+                <div class="col-md">
                     <a class="btn btn-sm btn-hero btn-noborder btn-primary btn-block" href="javascript:void(0)">
                         Booking
                     </a>
                 </div>
+                <div class="col-md-2"></div>
             </div>
+            <br>
             <p class="font-size-sm font-w600">
                 Dolor posuere proin blandit accumsan senectus netus nullam curae, ornare laoreet adipiscing luctus mauris adipiscing pretium eget fermentum, tristique lobortis est ut metus lobortis tortor tincidunt himenaeos habitant quis dictumst proin odio sagittis purus mi, nec taciti vestibulum quis in sit varius lorem sit metus mi.
             </p>
@@ -428,24 +429,23 @@
                 <!-- Main Content -->
                 <div class="content">
                     <div class="row">
-                        <div>
+                        <div class="col-md">
                             <a class="btn btn-sm btn-hero btn-noborder btn-secondary btn-block" data-toggle="layout" href="">
                                 Back to Result
                             </a>
                         </div>
-                        <div class="col-md-4 offset-md-6">
-                            <div class="block block-rounded block-bordered">
-                                <div class="block-content">
+                        <div class="col-md-4 offset-md-6 ">
+                            <div class="">
+                                <div class="float-right">
                                     <p>
-                                        <a class="btn btn-sm" > <i class="fa fa-print lg"></i></a>
-                                        <a class="btn btn-sm "> <i class="fa fa-info-circle"></i></a>
-                                        <a class="btn btn-sm "> <i class="fa fa-info-circle"></i></a>
+                                        <button class="btn btn-lg "> <i class="fa fa-info-circle"></i></button>
+                                        <button class="btn btn-lg "> <i class="si si-pin"></i></button>
+                                        <button class="btn btn-lg" > <i class="fa fa-file-pdf"></i></button>
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <br>
                     <div class="block block-bordered">
                         <!-- <div class="block-header block-header-default">
                         </div> -->
@@ -483,62 +483,53 @@
                                 <p> 10 days 8 night</p>
                             </div>
                         </div>
-
-                        <div class="row">
-
-                            <div class="col-md-6">
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <span class="">
-                                            <button type="button" class="btn btn-outline-secondary dropdown-toggle" id="dropdown-default-outline-secondary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                Jadwal
-                                            </button>
-                                            <div class="dropdown-menu" aria-labelledby="dropdown-default-outline-secondary">
-                                                <a class="dropdown-item" >28-Okt-2019</a>
-                                                <a class="dropdown-item" >17-Nov-2019</a>
-                                            </div>
-                                        </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <span>
-                                            <button type="button" class="btn btn-outline-secondary dropdown-toggle" id="dropdown-default-outline-secondary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                Hotel
-                                            </button>
-                                            <div class="dropdown-menu" aria-labelledby="dropdown-default-outline-secondary">
-                                                <a class="dropdown-item" >Quadruple</a>
-                                                <a class="dropdown-item" >Triple</a>
-                                                <a class="dropdown-item" >Double</a>
-                                                <a class="dropdown-item" >Single</a>
-                                            </div>
-                                        </span>
-                                <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                            <button type="button" class="btn btn-outline-secondary dropdown-toggle" id="dropdown-default-outline-secondary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                Person
-                                            </button>
-                                            <div class="dropdown-menu" aria-labelledby="dropdown-default-outline-secondary">
-                                                <a class="dropdown-item" >1</a>
-                                                <a class="dropdown-item" >2</a>
-                                                <a class="dropdown-item" >3</a>
-                                                <a class="dropdown-item" >4</a>
-                                            </div>
-                                        </span>
-
+                        <div class="form-group form-row ml-2">
+                            <div class="col">
+                                <div>
+                                    <select class="custom-select" id="select-price" name="select-price">
+                                        <option value="0">Jadwal</option>
+                                        <option value="1">28-Okt-2019</option>
+                                        <option value="2">01-Nov-2019</option>
+                                    </select>
+                                </div>
                             </div>
-
-                            <div class="col-md-6">
-                                        <span>
-                                            <a class="btn btn-sm btn-hero btn-noborder btn-info " data-toggle="layout" href="">
-                                                Booking
-                                            </a>
-                                        </span>
+                            <div class="col">
+                                <div>
+                                    <select class="custom-select" id="select-price" name="select-price">
+                                        <option value="0">Hotel</option>
+                                        <option value="1">Quadruple</option>
+                                        <option value="2">Triple</option>
+                                        <option value="3">Double</option>
+                                        <option value="4">Single</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div>
+                                    <select class="custom-select" id="select-price" name="select-price">
+                                        <option value="0">Person</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col text-center">
+                                <button class="btn btn-primary btn-block btn-sm"> Booking</button>
+                            </div>
+                            <div class="col-md-2">
                             </div>
                         </div>
                     </div>
                     <div class="col-md-12">
                         <!-- Slider with multiple images and center mode -->
                         <div class="block">
-                            <div class="block-header block-header-default">
-                                <h3 class="block-title">
-                                    <!-- <i class="fa fa-play fa-fw text-primary"></i> -->
-                                </h3>
-                            </div>
+<!--                            <div class="block-header block-header-default">-->
+<!--                                <h3 class="block-title">-->
+<!--                                    &lt;!&ndash; <i class="fa fa-play fa-fw text-primary"></i> &ndash;&gt;-->
+<!--                                </h3>-->
+<!--                            </div>-->
                             <div class="js-slider slick-nav-black slick-nav-hover" data-dots="true" data-arrows="true" data-slides-to-show="3" data-center-mode="true" data-autoplay="true" data-autoplay-speed="3000">
                                 <div>
                                     <img class="img-fluid" src="assets/media/photos/photo15.jpg" alt="">
@@ -584,7 +575,8 @@
                         </li>
                     </ul>
                     <div class="tab-content">
-                        <div class="tab-pane container active" id="des">
+                        <div class="tab-pane container active block block-bordered" id="des">
+                            <br>
                             Deskripsi adalah satu kaidah upaya pengolahan data menjadi sesuatu yang dapat diutarakan secara jelas dan tepat dengan tujuan agar dapat dimengerti oleh orang yang tidak langsung mengalaminya sendiri.[1]
                             Dalam keilmuan, deskripsi diperlukan agar peneliti tidak melupakan pengalamannya dan agar pengalaman tersebut dapat dibandingkan dengan pengalaman peneliti lain, sehingga mudah untuk dilakukan pemeriksaan dan kontrol terhadap deskripsi tersebut. Pada umumnya deskripsi menegaskan sesuatu, seperti apa sesuatu itu kelihatannya, bagaimana bunyinya, bagaimana rasanya, dan sebagainya. Deskripsi yang detail diciptakan dan dipakai dalam disiplin ilmu sebagai istilah teknik.
                             Saat data yang dikumpulkan, deskripsi, analisis dan kesimpulannya lebih disajikan dalam angka-angka maka hal ini dinamakan penelitian kuantitatif. Sebaliknya, apabila data, deskripsi, dan analisis kesimpulannya disajikan dalam uraian kata-kata maka dinamakan penelitian kualitatif
@@ -593,7 +585,7 @@
                         <div class="tab-pane container fade" id="menu2">...</div>
                     </div>
                 </div>
-
+            </div>
             </div>
             <!-- END Page Content -->
     </main>

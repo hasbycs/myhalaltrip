@@ -393,9 +393,9 @@ MAIN CONTENT LAYOUT
                     <div id="side-content" class="d-none d-lg-block push">
                         <div class="block">
                             <div class="block-header block-header-default">
-                                <h1 class="block-title text-center" style="font-size: 28px"><b>Payment Details &nbsp;  <i class="fab fa-paypal"></i></b></h1>
+                                <h1 class="block-title text-center"><b>Payment Details &nbsp;  <i class="fab fa-paypal"></i></b></h1>
                             </div>
-                            <div class="block-content">
+                            <div class="block-content fs-small">
                                 <p>Order Details</p>
                                 <div class="table-responsive">
                                     <table class="table" style="border: 0px">
@@ -432,8 +432,8 @@ MAIN CONTENT LAYOUT
                                 </div>
                                 <div class="border border-secondary block-content block-content-full">
                                     <div class="row">
-                                        <div class="col-md-6 text-center"> <h5>Promo Code</h5></div>
-                                        <div class="col-md-6 text-center"> <button class="btn btn-info">Apply</button></div>
+                                        <div class="col-md-6 text-center"> <strong>Promo Code</strong></div>
+                                        <div class="col-md-6 text-center"> <button class="btn btn-info btn-sm">Apply</button></div>
                                     </div>
                                 </div>
                                 <br>
@@ -483,7 +483,7 @@ MAIN CONTENT LAYOUT
                 <!-- Main Content -->
                 <div class="content">
                     <div class="row">
-                        <div class="col-md-5 border">
+                        <div class="col-md-5 border font-size-sm">
                             <div class="block block-rounded mh-100">
                                 <div class="block-header block-header-default">
                                     <h3 class="block-title">Contact Details</h3>
@@ -500,18 +500,16 @@ MAIN CONTENT LAYOUT
                         <div class="col-md-7 border">
                             <div class="block block-rounded mh-100">
                                 <div class="block-header block-header-default">
-                                    <h3 class="block-title">Booking Summary</h3>
+                                    <h5 class="block-title">Booking Summary</h5>
                                 </div>
                                 <div class="block-content">
                                     <div class="row">
-                                        <div class="col-md-3">
-                                            <div class="block-content block-content-full">
-                                                <img class="img-avatar img-avatar-thumb img-avatar-rounded" style="width:100px;height:100px" src="assets/media/avatars/avatar15.jpg" alt="">
-                                            </div>
+                                        <div class="col-md-3 text-center">
+                                            <img class="img-avatar img-avatar-thumb img-avatar-rounded mr-2" style="width:100px;height:100px" src="assets/media/avatars/avatar15.jpg" alt="">
                                         </div>
                                         <div class="col-md-9">
-                                            <h3>Jelajah Bumi Nabi</h3>
-                                            <div class="table-responsive">
+                                            <h5 class="ml-3">Jelajah Bumi Nabi</h5>
+                                            <div class="table-responsive fs-small">
                                                 <table class="table" style="border: 0px">
                                                     <tbody>
                                                     <tr>
@@ -565,32 +563,32 @@ MAIN CONTENT LAYOUT
                         <div class="col-md-12">
                             <div class="block block-bordered">
                                 <div class="block-header block-header-default">
-                                    <h3 class="block-title">PASSANGER DETAILS <i class="fa fa-chevron-down float-right"></i></h3>
+                                    <h5 class="block-title">PASSANGER DETAILS <i class="fa fa-chevron-down float-right"></i></h5>
                                 </div>
                                 <div class="block-content">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <h4>Passenger 1 * For International Destination only</h4>
-                                            <form class="form-inline mb-4" action="be_forms_layouts.html" method="POST" onsubmit="return false;">
-                                                <select class="custom-select" id="example-select-custom1" name="example-select-custom1">
+                                            <h6>Passenger 1 * For International Destination only</h6>
+                                            <form class="form-row form-group mb-4" action="be_forms_layouts.html" method="POST" onsubmit="return false;">
+                                                <select class="custom-select col-sm" id="example-select-custom1" name="example-select-custom1">
                                                     <option value="0">Title</option>
                                                     <option value="1">Mr</option>
                                                     <option value="2">Mrs</option>
                                                 </select>
                                                 <label class="sr-only" for="example-if-first">First Name</label>
-                                                <input type="email" class="form-control mb-2 mr-sm-2 mb-sm-0" id="example-if-first" name="example-if-email" placeholder="First Name">
+                                                <input type="email" class="form-control mb-2 mr-sm-2 mb-sm-0 col-sm" id="example-if-first" name="example-if-email" placeholder="First Name">
                                                 <label class="sr-only" for="example-if-last">Last Name</label>
-                                                <input type="password" class="form-control mb-2 mr-sm-2 mb-sm-0" id="example-if-last" name="example-if-password" placeholder="Last Name">
+                                                <input type="password" class="form-control mb-2 mr-sm-2 mb-sm-0 col-sm" id="example-if-last" name="example-if-password" placeholder="Last Name">
                                             </form>
                                         </div>
                                         <div class="col-md-2">
-                                            <h4>Visa</h4>
+                                            <h6>Visa</h6>
                                             <div class="form-group">
-                                                <input class="form-control" type="text" id="example-datepicker1" name="example-datepicker1" data-week-start="1" data-autoclose="true" data-today-highlight="true">
+                                                <input class="form-control" type="text" id="visa" name="example-datepicker1">
                                             </div>
                                         </div>
                                         <div class="col-md-3">
-                                            <h4>Date of Birth</h4>
+                                            <h6>Date of Birth</h6>
                                             <div class="form-group">
                                                 <input type="text" class="js-datepicker form-control js-datepicker-enabled" id="example-datepicker1" name="example-datepicker1" data-week-start="1" data-autoclose="true" data-today-highlight="true" data-date-format="mm/dd/yy" placeholder="mm/dd/yy">
                                             </div>
@@ -598,27 +596,27 @@ MAIN CONTENT LAYOUT
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <h4>Passenger 2 * For International Destination only</h4>
-                                            <form class="form-inline mb-4" action="be_forms_layouts.html" method="POST" onsubmit="return false;">
-                                                <select class="custom-select" id="example-select-custom1" name="example-select-custom1">
+                                            <h6>Passenger 2 * For International Destination only</h6>
+                                            <form class="form-row form-group mb-4" action="be_forms_layouts.html" method="POST" onsubmit="return false;">
+                                                <select class="custom-select col-sm" id="example-select-custom1" name="example-select-custom1">
                                                     <option value="0">Title</option>
                                                     <option value="1">Mr</option>
                                                     <option value="2">Mrs</option>
                                                 </select>
                                                 <label class="sr-only" for="example-if-first">First Name</label>
-                                                <input type="email" class="form-control mb-2 mr-sm-2 mb-sm-0" id="example-if-first" name="example-if-email" placeholder="First Name">
+                                                <input type="email" class="form-control mb-2 mr-sm-2 mb-sm-0 col-sm" id="example-if-first" name="example-if-email" placeholder="First Name">
                                                 <label class="sr-only" for="example-if-last">Last Name</label>
-                                                <input type="password" class="form-control mb-2 mr-sm-2 mb-sm-0" id="example-if-last" name="example-if-password" placeholder="Last Name">
+                                                <input type="password" class="form-control mb-2 mr-sm-2 mb-sm-0 col-sm" id="example-if-last" name="example-if-password" placeholder="Last Name">
                                             </form>
                                         </div>
                                         <div class="col-md-2">
-                                            <h4>Visa</h4>
+                                            <h6>Visa</h6>
                                             <div class="form-group">
                                                 <input type="text" class="form-control" id="example-datepicker1" name="example-datepicker1" data-week-start="1" data-autoclose="true" data-today-highlight="true" >
                                             </div>
                                         </div>
                                         <div class="col-md-3">
-                                            <h4>Date of Birth</h4>
+                                            <h6>Date of Birth</h6>
                                             <div class="form-group">
                                                 <input type="text" class="js-datepicker form-control js-datepicker-enabled" id="example-datepicker1" name="example-datepicker1" data-week-start="1" data-autoclose="true" data-today-highlight="true" data-date-format="mm/dd/yy" placeholder="mm/dd/yy">
                                             </div>
@@ -631,10 +629,10 @@ MAIN CONTENT LAYOUT
                     <div class="row">
                         <div class="col-md-2"></div>
                         <div class="col-md-8 centered">
-                            <div class="block block-bordered text-center">
+                            <div class="text-center">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="example-checkbox-default1" name="example-checkbox-default1">
-                                    <label class="form-check-label" for="example-checkbox-default1"><h3>Check, If you want to add passenger details later</h3></label>
+                                    <label class="form-check-label" for="example-checkbox-default1"><h5>Check, If you want to add passenger details later</h5></label>
                                 </div>
                             </div>
                         </div>
@@ -691,4 +689,7 @@ MAIN CONTENT LAYOUT
     .mh-100 {
         min-height: 100%;
     }
+     .fs-small{
+         font-size: 12px;
+     }
 </style>
